@@ -1,0 +1,7 @@
+#!/bin/bash
+if pgrep -x "ping" >/dev/null
+then
+   pkill ping
+else 
+gnome-terminal -e "ping 8.8.8.8"
+fi
